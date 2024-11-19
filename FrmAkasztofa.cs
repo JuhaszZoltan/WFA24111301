@@ -1,6 +1,4 @@
-using System.Runtime.CompilerServices;
 using System.Text;
-using WFA24111301.Properties;
 
 namespace WFA24111301;
 
