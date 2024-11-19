@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             pbAkasztofa = new PictureBox();
-            lblFeladvany = new Label();
-            lblTippek = new Label();
+            lblPuzzle = new Label();
+            lblTips = new Label();
             label3 = new Label();
             label4 = new Label();
-            txbTipp = new TextBox();
+            txbTip = new TextBox();
             btnTipp = new Button();
+            lblHint = new Label();
             ((System.ComponentModel.ISupportInitialize)pbAkasztofa).BeginInit();
             SuspendLayout();
             // 
@@ -46,32 +47,32 @@
             pbAkasztofa.TabIndex = 0;
             pbAkasztofa.TabStop = false;
             // 
-            // lblFeladvany
+            // lblPuzzle
             // 
-            lblFeladvany.BackColor = Color.Beige;
-            lblFeladvany.Font = new Font("Consolas", 30F);
-            lblFeladvany.Location = new Point(12, 39);
-            lblFeladvany.Name = "lblFeladvany";
-            lblFeladvany.Size = new Size(780, 155);
-            lblFeladvany.TabIndex = 1;
-            lblFeladvany.Text = "_ _ _ _  _  _ _  _ _ _ _ _";
-            lblFeladvany.TextAlign = ContentAlignment.MiddleCenter;
+            lblPuzzle.BackColor = Color.Beige;
+            lblPuzzle.Font = new Font("Consolas", 30F);
+            lblPuzzle.Location = new Point(12, 116);
+            lblPuzzle.Name = "lblPuzzle";
+            lblPuzzle.Size = new Size(780, 155);
+            lblPuzzle.TabIndex = 1;
+            lblPuzzle.Text = "_ _ _ _  _  _ _  _ _ _ _ _";
+            lblPuzzle.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblTippek
+            // lblTips
             // 
-            lblTippek.BackColor = Color.Gainsboro;
-            lblTippek.Font = new Font("Consolas", 30F);
-            lblTippek.Location = new Point(12, 230);
-            lblTippek.Name = "lblTippek";
-            lblTippek.Size = new Size(780, 155);
-            lblTippek.TabIndex = 1;
-            lblTippek.Text = "A, B, G, W, C,";
-            lblTippek.TextAlign = ContentAlignment.MiddleLeft;
+            lblTips.BackColor = Color.Gainsboro;
+            lblTips.Font = new Font("Consolas", 30F);
+            lblTips.Location = new Point(12, 298);
+            lblTips.Name = "lblTips";
+            lblTips.Size = new Size(780, 155);
+            lblTips.TabIndex = 1;
+            lblTips.Text = "A, B, G, W, C,";
+            lblTips.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 24);
+            label3.Location = new Point(12, 101);
             label3.Name = "label3";
             label3.Size = new Size(61, 15);
             label3.TabIndex = 2;
@@ -80,7 +81,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 215);
+            label4.Location = new Point(12, 283);
             label4.Name = "label4";
             label4.Size = new Size(110, 15);
             label4.TabIndex = 2;
@@ -88,33 +89,45 @@
             // 
             // txbTipp
             // 
-            txbTipp.Font = new Font("Segoe UI", 40F);
-            txbTipp.Location = new Point(47, 457);
-            txbTipp.Name = "txbTipp";
-            txbTipp.Size = new Size(89, 78);
-            txbTipp.TabIndex = 3;
+            txbTip.Font = new Font("Segoe UI", 40F);
+            txbTip.Location = new Point(23, 491);
+            txbTip.Name = "txbTipp";
+            txbTip.Size = new Size(89, 78);
+            txbTip.TabIndex = 3;
             // 
             // btnTipp
             // 
             btnTipp.Font = new Font("Segoe UI", 30F);
-            btnTipp.Location = new Point(142, 456);
+            btnTipp.Location = new Point(118, 490);
             btnTipp.Name = "btnTipp";
             btnTipp.Size = new Size(115, 79);
             btnTipp.TabIndex = 4;
             btnTipp.Text = "Tipp";
             btnTipp.UseVisualStyleBackColor = true;
             // 
+            // lblHint
+            // 
+            lblHint.BackColor = Color.Lavender;
+            lblHint.Font = new Font("Segoe UI", 20F);
+            lblHint.Location = new Point(12, 12);
+            lblHint.Name = "lblHint";
+            lblHint.Size = new Size(780, 89);
+            lblHint.TabIndex = 5;
+            lblHint.Text = "label1";
+            lblHint.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // FrmAkasztofa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1210, 627);
+            Controls.Add(lblHint);
             Controls.Add(btnTipp);
-            Controls.Add(txbTipp);
+            Controls.Add(txbTip);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(lblTippek);
-            Controls.Add(lblFeladvany);
+            Controls.Add(lblTips);
+            Controls.Add(lblPuzzle);
             Controls.Add(pbAkasztofa);
             Name = "FrmAkasztofa";
             Text = "Form1";
@@ -126,11 +139,12 @@
         #endregion
 
         private PictureBox pbAkasztofa;
-        private Label lblFeladvany;
-        private Label lblTippek;
+        private Label lblPuzzle;
+        private Label lblTips;
         private Label label3;
         private Label label4;
-        private TextBox txbTipp;
+        private TextBox txbTip;
         private Button btnTipp;
+        private Label lblHint;
     }
 }

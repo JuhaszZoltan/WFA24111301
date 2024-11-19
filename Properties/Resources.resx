@@ -117,38 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="akasztofa_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_01.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_02.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_03.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_04.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_05.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_06.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_07.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_08.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_09.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_10.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="akasztofa_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\akasztofa_11.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
 </root>

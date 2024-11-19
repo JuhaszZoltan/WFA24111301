@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System.Text;
 using WFA24111301.Properties;
 
@@ -5,74 +6,57 @@ namespace WFA24111301;
 
 public partial class FrmAkasztofa : Form
 {
-    private string feladvany;
-    private string rejtveny;
-    private List<char> talalatok = [];
-    private int rosszTipp = 0;
+    private const string RIDDLES_FILE_LOCATION = "D:\\PROJECTS\\WFA24111301\\Resources\\feladvanyok.txt";
+    private const string GALLOWS_SPRITE_FOLDER = "D:\\PROJECTS\\WFA24111301\\Resources\\";
 
+    private Riddle riddle;
 
     public FrmAkasztofa()
     {
         InitializeComponent();
         this.Load += FrmAkasztofa_Load;
         btnTipp.Click += BtnTipp_Click;
-        txbTipp.TextChanged += TxbTipp_TextChanged;
+        txbTip.TextChanged += TxbTipp_TextChanged;
     }
 
     private void TxbTipp_TextChanged(object? sender, EventArgs e)
     {
-        txbTipp.Text = $"{txbTipp.Text[0]}";
+        if (txbTip.Text.Length > 0)
+        txbTip.Text = $"{txbTip.Text[0]}".ToUpper();
     }
 
     private void BtnTipp_Click(object? sender, EventArgs e)
     {
-        if (string.IsNullOrEmpty(txbTipp.Text)) return;
+        if (string.IsNullOrWhiteSpace(txbTip.Text)) return;
 
-        char tipp = char.Parse(txbTipp.Text.ToUpper());
+        if (riddle.Check(char.Parse(txbTip.Text)))
+            lblPuzzle.Text = string.Join(' ', riddle.Puzzle);
 
-        if (feladvany.Contains(tipp))
-        {
-            talalatok.Add(tipp);
+        else pbAkasztofa.Image = Image.FromFile(
+            $"{GALLOWS_SPRITE_FOLDER}" +
+            $"akasztofa_{riddle.WrongTips.Count:00}.png");
 
-            rejtveny = string.Empty;
-            foreach (var c in feladvany)
-            {
-                if (c == ' ') rejtveny += "  ";
-                else if (talalatok.Contains(c))
-                    rejtveny += $"{c} ";
-                else rejtveny += "_ ";
-            }
-
-            lblFeladvany.Text = rejtveny;
-        }
-        else
-        {
-            rosszTipp++;
-            pbAkasztofa.Image = Image.FromFile(
-                $"E:\\PROJECTS\\WFA24111301\\Resources\\akasztofa_{rosszTipp:00}.png");
-        }
-
+        lblTips.Text = string.Join(", ", riddle.AllTips);
     }
 
     private void FrmAkasztofa_Load(object? sender, EventArgs e)
     {
-        List<string> feladvanyok = [];
+        riddle = GetRandomRiddle();
+        SetUI();
+    }
 
-        using StreamReader sr = new("E:\\PROJECTS\\WFA24111301\\Resources\\feladvanyok.txt", Encoding.UTF8);
+    private void SetUI()
+    {
+        lblHint.Text = riddle.Hint;
+        lblPuzzle.Text = string.Join(' ', riddle.Puzzle);
+        lblTips.Text = string.Empty;
+    }
 
-        while (!sr.EndOfStream) feladvanyok.Add(sr.ReadLine());
-
-        feladvany = feladvanyok[Random.Shared.Next(feladvanyok.Count)].ToUpper();
-
-        rejtveny = "";
-        foreach (var c in feladvany)
-        {
-            if (c == ' ') rejtveny += "  ";
-            else rejtveny += "_ ";
-        }
-
-        lblFeladvany.Text = rejtveny;
-
-        lblTippek.Text = "";
+    private Riddle GetRandomRiddle()
+    {
+        List<Riddle> riddles = [];
+        using StreamReader sr = new(RIDDLES_FILE_LOCATION, Encoding.UTF8);
+        while (!sr.EndOfStream) riddles.Add(new(sr.ReadLine()));
+        return riddles[Random.Shared.Next(riddles.Count)];
     }
 }

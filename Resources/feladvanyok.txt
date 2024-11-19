@@ -1,1 +1,30 @@
-alma a fa alatt
+édes gyümölcs, sokféle fajtája van;gyümölcs
+a ház tetején lakik, éjjel repül;bagoly
+a tengeren hajózik, kincsesládát keres;kalóz
+a réten legelészik, tejet ad;tehén
+a fán terem, piros vagy sárga lehet;alma
+a kutyának legjobb barátja;ember
+a vízben úszik, pikkelyes a bőre;hal
+a fűben rejtőzik, ugrál;nyúl
+az égen repül, fészket épít;madár
+a virágban lakik, mézet gyűjt;méh
+a házban lakik, főz és takarít;anya
+az iskolába jár, tanul és játszik;diák
+a télen esik, fehér és hideg;hó
+a könyvtárban találhatsz, sok történetet olvashatsz benne;könyv
+a kertben nő, színes virágai vannak;rózsa
+az égen süt, melege van;nap
+a falon lóg, mutatja az időt;óra
+a focilabdát rúgjuk vele, a kosárlabdát dobáljuk;kéz
+a számítógépen játszunk vele, sokféle lehet;játék
+a tengerparton építjük, majd lebonthatjuk;vár
+a múzeumban láthatod, régi tárgyak;történelem
+a betegség ellen véd, a doktornő adja;gyógyszer
+a zongorán játszunk rajta, szép hangja van;zene
+a levelet írjuk vele, a tollal együtt használjuk;papír
+a hegy tetején áll, távolról látható;torony
+a világűrt kutatják, űrhajóval járnak;asztronauta
+a növényeknek vizet ad, a kertben használjuk;öntözőkanna
+a versenyen futunk, a célba érünk;verseny
+a rejtélyt megfejtjük, az agyunkat dolgoztatjuk;találós kérdés
+a fényt ad, a sötétben világít;lámpa
